@@ -1,0 +1,17 @@
+﻿streamlit
+pandas
+numpy
+scikit-learn
+lightgbm
+joblib
+PyYAML
+matplotlib
+seaborn
+requests
+python-dotenv
+rank-bm25
+langchain-core
+langchain-community
+langchain-chroma
+langchain-groq
+fastembed

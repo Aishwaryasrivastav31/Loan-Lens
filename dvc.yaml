@@ -1,0 +1,18 @@
+
+stages:
+  train_and_evaluate:
+    cmd: python src/ml_pipeline.py
+    deps:
+      - src/ml_pipeline.py
+      - src/yaml_loader.py
+      - config.yaml
+      - data/loan-train.csv
+      - data/loan-test.csv
+    outs:
+      - models/
+      - reports/plots/
+      - reports/model_comparison.csv
+      - reports/test_predictions.csv
+    metrics:
+      - reports/metrics.json:
+          cache: false
